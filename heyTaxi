@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int km;
+        double kmPer = 2.20, totalAmount;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter total km :");
+        km = sc.nextInt();
+        totalAmount = 10 + (km * kmPer);
+        totalAmount = (totalAmount < 20) ? 20 : totalAmount;
+
+        System.out.println("Total Amount : " + totalAmount );
+
+
+    }
+}
